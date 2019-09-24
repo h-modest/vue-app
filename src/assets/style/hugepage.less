@@ -1,0 +1,71 @@
+
+.ts-hugepage {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  .huge-container {
+    padding: 40px 0;
+  }
+  .ts-leftmenu-content {
+    display: table;
+    width: 140px;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    ul {
+      margin: 0;
+      li {
+        overflow: hidden;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        background-image: url(/static/images/page/leftmenu_mid.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        &.ts-leftmenu-top {
+          height: 32px !important;
+          background-image: url(/static/images/page/leftmenu_top.png) !important;
+          background-repeat: no-repeat !important;
+          background-position: right bottom !important;
+        }
+        &.ts-leftmenu-bottom {
+          height: 32px !important;
+          background-image: url(/static/images/page/leftmenu_bottom.png) !important;
+          background-repeat: no-repeat !important;
+          background-position: right bottom !important;
+        }
+        &.current {
+          a {
+            background-image: url(/static/images/page/leftmenu_hover.png);
+            background-repeat: no-repeat;
+            background-position: right center;
+            color: #FFF;
+          }
+        }
+        a {
+          background-image: url(/static/images/blue/leftmenu_mid.png);
+          background-repeat: no-repeat;
+          background-position: right center;
+          color: #555;
+          display: block;
+          font-size: 12px;
+          text-align: right;
+          width: 110px;
+          padding-right: 30px;
+          overflow: hidden;
+          white-space: nowrap;
+          -o-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          height: 32px;
+          line-height: 32px;
+          text-decoration: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .ts-right-content {
+    margin-left: 160px;
+    padding: 0 20px;
+    width: calc(100% - 200px);
+  }
+}
